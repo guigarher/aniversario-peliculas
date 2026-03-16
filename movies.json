@@ -1,0 +1,811 @@
+[
+  {
+    "id": 1,
+    "title": "Who Framed Roger Rabbit",
+    "date": "2025-03-22",
+    "watchType": "cinema",
+    "place": "Espacio Cultural CajaCanarias, Santa Cruz de Tenerife",
+    "notes": "Primera película juntos.",
+    "tags": [
+      "first"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "aventura",
+      "fantasía"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Flow",
+    "date": "2025-03-25",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Nuestra primera peli de animación, hablaban casi tanto como nosotros.",
+    "tags": [
+      "early"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "fantasía",
+      "drama"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sinners",
+    "date": "2025-04-18",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Pues mira se llevó el oscar Michael B. Jordan, mejor guión original, mejor banda sonora y mejor fotografía.",
+    "tags": [],
+    "genres": [
+      "terror",
+      "drama",
+      "thriller"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Look Back",
+    "date": "2025-05-11",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Creo que no la acabaste de ver.",
+    "tags": [],
+    "genres": [
+      "animación",
+      "drama"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Phoenician Scheme",
+    "date": "2025-06-04",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Primera película de una racha de dos días seguidos yendo al cine juntos.",
+    "tags": [
+      "streak"
+    ],
+    "genres": [
+      "comedia",
+      "drama",
+      "crimen"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Lilo & Stitch",
+    "date": "2025-06-05",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Muy peludito y mucho peludito.",
+    "tags": [
+      "streak"
+    ],
+    "genres": [
+      "animación",
+      "aventura",
+      "comedia",
+      "familiar",
+      "ciencia ficción"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "The Assessment",
+    "date": "2025-06-14",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "ciencia ficción",
+      "drama",
+      "thriller"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "28 Days Later",
+    "date": "2025-06-21",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Maratón en casa.",
+    "tags": [
+      "marathon"
+    ],
+    "genres": [
+      "terror",
+      "ciencia ficción",
+      "thriller"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "28 Weeks Later",
+    "date": "2025-06-21",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Maratón en casa.",
+    "tags": [
+      "marathon"
+    ],
+    "genres": [
+      "terror",
+      "ciencia ficción",
+      "thriller"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "28 Years Later",
+    "date": "2025-06-25",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "La vimos en mi cumpleaños.",
+    "tags": [
+      "birthday"
+    ],
+    "genres": [
+      "terror",
+      "ciencia ficción",
+      "thriller"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "The Iron Claw",
+    "date": "2025-06-28",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "drama",
+      "biografía",
+      "deporte"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Superman",
+    "date": "2025-07-16",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "superhéroes",
+      "acción",
+      "aventura",
+      "ciencia ficción"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Bob Trevino Likes It",
+    "date": "2025-07-20",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "De nuestras mejor valoradas.",
+    "tags": [],
+    "genres": [
+      "drama",
+      "comedia"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Sing",
+    "date": "2025-07-25",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Sesión doble en casa.",
+    "tags": [
+      "double"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "musical",
+      "familiar"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Sing 2",
+    "date": "2025-07-25",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Sesión doble en casa.",
+    "tags": [
+      "double"
+    ],
+    "genres": [
+      "animación",
+      "comedia",
+      "musical",
+      "familiar"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Bring Her Back",
+    "date": "2025-08-06",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "terror",
+      "thriller"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Lost in Starlight",
+    "date": "2025-08-13",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "animación",
+      "romance",
+      "ciencia ficción",
+      "drama"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Dog Day Afternoon",
+    "date": "2025-08-14",
+    "watchType": "cinema",
+    "place": "TEA",
+    "notes": "Nuestra primera película en el TEA.",
+    "tags": [],
+    "genres": [
+      "crimen",
+      "drama",
+      "thriller"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Weapons",
+    "date": "2025-08-15",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Oscar a mejor actriz de reparto para Amy Madigan.",
+    "tags": [],
+    "genres": [
+      "terror",
+      "misterio",
+      "thriller"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Punch-Drunk Love",
+    "date": "2025-08-15",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "El mismo día que Weapons, pero en casa.",
+    "tags": [
+      "doubleDay"
+    ],
+    "genres": [
+      "romance",
+      "comedia",
+      "drama"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Forrest Gump",
+    "date": "2025-08-23",
+    "watchType": "memory",
+    "place": "La Gomera",
+    "notes": "Recuerdo de la Gomera.",
+    "tags": [
+      "gomera",
+      "memory"
+    ],
+    "genres": [
+      "drama",
+      "romance",
+      "comedia"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Catch Me If You Can",
+    "date": "2025-08-23",
+    "watchType": "memory",
+    "place": "La Gomera",
+    "notes": "Recuerdo de La Gomera.",
+    "tags": [
+      "gomera",
+      "memory"
+    ],
+    "genres": [
+      "crimen",
+      "drama",
+      "biografía",
+      "comedia"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Rent",
+    "date": "2025-08-29",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Raquel me mata si ve mi letterboxd de esta película.",
+    "tags": [],
+    "genres": [
+      "musical",
+      "drama",
+      "romance"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "The Karate Kid",
+    "date": "2025-09-06",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Sesión karateka en casa.",
+    "tags": [
+      "double"
+    ],
+    "genres": [
+      "drama",
+      "deporte",
+      "familiar"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Karate Kid: Legends",
+    "date": "2025-09-06",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Sesión karateka en cine.",
+    "tags": [
+      "double"
+    ],
+    "genres": [
+      "acción",
+      "drama",
+      "deporte"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Forgotten",
+    "date": "2025-09-12",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Y tan forgotten que ni la recuerdo casi.",
+    "tags": [],
+    "genres": [
+      "thriller",
+      "misterio",
+      "crimen"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Mulholland Drive",
+    "date": "2025-09-14",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Fumada de época.",
+    "tags": [],
+    "genres": [
+      "misterio",
+      "thriller",
+      "drama"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Wildlife",
+    "date": "2025-09-19",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "drama"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Dual",
+    "date": "2025-09-20",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "ciencia ficción",
+      "comedia negra",
+      "thriller"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Predestination",
+    "date": "2025-09-21",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "ciencia ficción",
+      "thriller",
+      "misterio"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "One Battle After Another",
+    "date": "2025-09-26",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Oscar a mejor película, mejor dirección, mejor guion adaptado, mejor montaje, mejor reparto y mejor actor de reparto para Sean Penn.",
+    "tags": [],
+    "genres": [
+      "crimen",
+      "drama",
+      "thriller",
+      "comedia negra"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Caught Stealing",
+    "date": "2025-10-24",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Una de tantas en las que te dormiste un rato jaja.",
+    "tags": [],
+    "genres": [
+      "crimen",
+      "thriller",
+      "comedia negra"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "The Handmaiden",
+    "date": "2025-10-25",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Creo que no la terminamos de ver",
+    "tags": [],
+    "genres": [
+      "thriller",
+      "romance",
+      "drama",
+      "misterio"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Back to the Future",
+    "date": "2025-10-31",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Absolute cinema.",
+    "tags": [],
+    "genres": [
+      "ciencia ficción",
+      "aventura",
+      "comedia"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Good Boy",
+    "date": "2025-11-01",
+    "watchType": "cinema",
+    "place": "TEA",
+    "notes": "Nuestra segunda película en el TEA.",
+    "tags": [],
+    "genres": [
+      "terror",
+      "comedia",
+      "thriller"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Back to the Future Part II",
+    "date": "2025-11-02",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Continuación de Absolute cinema.",
+    "tags": [],
+    "genres": [
+      "ciencia ficción",
+      "aventura",
+      "comedia"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Zootopia 2",
+    "date": "2025-12-04",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "De tus sagas favoritas de animación.",
+    "tags": [],
+    "genres": [
+      "animación",
+      "aventura",
+      "comedia",
+      "familiar"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Until Dawn",
+    "date": "2025-12-06",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "terror",
+      "thriller"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Sentimental Value",
+    "date": "2025-12-07",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Oscar a mejor película internacional.",
+    "tags": [],
+    "genres": [
+      "drama",
+      "comedia"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "The Baltimorons",
+    "date": "2025-12-20",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Mi peli navideña favorita del año.",
+    "tags": [],
+    "genres": [
+      "comedia",
+      "drama",
+      "indie"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "A Private Life",
+    "date": "2026-01-01",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Primera película del año 2026 juntos, no se merece más comentario que ese.",
+    "tags": [
+      "firstOfYear"
+    ],
+    "genres": [
+      "drama"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "La vida entre cortes",
+    "date": "2026-01-11",
+    "watchType": "memory",
+    "place": "El Desleal, La Laguna",
+    "notes": "El mejor documental del año.",
+    "tags": [
+      "family"
+    ],
+    "genres": [
+      "documental"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "28 Years Later: The Bone Temple",
+    "date": "2026-01-16",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Mi favorita del año sin duda.",
+    "tags": [],
+    "genres": [
+      "terror",
+      "ciencia ficción",
+      "thriller"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "If I Had Legs I'd Kick You",
+    "date": "2026-01-17",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "En esta me dormí yo y no la terminé.",
+    "tags": [
+      "sleep"
+    ],
+    "genres": [
+      "drama",
+      "comedia negra"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "The Life of Chuck",
+    "date": "2026-01-24",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "drama",
+      "fantasía"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Marty Supreme",
+    "date": "2026-01-31",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Te quedaste sin oscar Chalamet.",
+    "tags": [],
+    "genres": [
+      "drama",
+      "comedia",
+      "deporte"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Hamnet",
+    "date": "2026-02-05",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Oscar a mejor actriz para Jessie Buckley.",
+    "tags": [],
+    "genres": [
+      "drama",
+      "histórico"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Cure",
+    "date": "2026-02-12",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "thriller",
+      "misterio",
+      "terror psicológico"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Relay",
+    "date": "2026-02-13",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Sin palabras...casi",
+    "tags": [],
+    "genres": [
+      "thriller",
+      "drama"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "The Great Flood",
+    "date": "2026-02-17",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "corto",
+      "drama",
+      "animación"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "The Singers",
+    "date": "2026-02-17",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "Único corto del año.",
+    "tags": [
+      "short"
+    ],
+    "genres": [
+      "corto",
+      "musical",
+      "drama"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "The Secret Agent",
+    "date": "2026-03-03",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "Mi primera siesta en un cine.",
+    "tags": [
+      "sleep"
+    ],
+    "genres": [
+      "crimen",
+      "drama",
+      "misterio",
+      "thriller"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Red Rooms",
+    "date": "2026-03-09",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "thriller",
+      "crimen",
+      "drama"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Roofman",
+    "date": "2026-03-13",
+    "watchType": "home",
+    "place": "Casa",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "crimen",
+      "drama"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Hoppers",
+    "date": "2026-03-14",
+    "watchType": "cinema",
+    "place": "Cine Alcampo",
+    "notes": "",
+    "tags": [],
+    "genres": [
+      "animación",
+      "aventura",
+      "comedia",
+      "ciencia ficción",
+      "familiar"
+    ]
+  }
+]
