@@ -2091,57 +2091,160 @@ video {
 
 .letter-wrap {
   position: relative;
-  width: min(100%, 900px);
+  width: min(100%, 920px);
   margin: 0 auto;
 }
 
+/* CARTA */
 .letter-card {
   position: relative;
-  padding: 40px 34px;
-  border-radius: 28px;
-  border: 1px solid var(--border);
+  padding: 54px 52px 48px;
+  border-radius: 18px;
+  min-height: 560px;
+  overflow: hidden;
+
+  color: #2f2419;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04)),
-    rgba(14, 16, 34, 0.62);
-  box-shadow: var(--shadow-lg);
-  min-height: 520px;
-  transition: filter 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
+    radial-gradient(circle at top left, rgba(255,255,255,0.38), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(186, 122, 53, 0.08), transparent 24%),
+    linear-gradient(180deg, #f7edd8 0%, #f2e3c4 48%, #ead7b0 100%);
+
+  border: 1px solid rgba(115, 79, 34, 0.22);
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255,255,255,0.32),
+    inset 0 -18px 40px rgba(145, 96, 38, 0.06);
+
+  transition:
+    filter 0.35s ease,
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+/* textura suave del papel */
+.letter-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(120, 84, 37, 0.12) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 34%, rgba(120, 84, 37, 0.08) 0 1px, transparent 2px),
+    radial-gradient(circle at 42% 70%, rgba(120, 84, 37, 0.09) 0 1px, transparent 2px),
+    radial-gradient(circle at 84% 82%, rgba(120, 84, 37, 0.08) 0 1px, transparent 2px);
+  background-size: 180px 180px, 220px 220px, 210px 210px, 240px 240px;
+}
+
+/* bordes quemados / envejecidos */
+.letter-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 0 0 1px rgba(115, 79, 34, 0.08),
+    inset 0 0 32px rgba(99, 59, 20, 0.10),
+    inset 0 18px 28px rgba(255,255,255,0.12),
+    inset 0 -26px 34px rgba(87, 47, 11, 0.10);
+}
+
+/* esquinas un poco tostadas */
+.letter-burn {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.letter-burn::before,
+.letter-burn::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  filter: blur(24px);
+  opacity: 0.18;
+}
+
+.letter-burn::before {
+  top: -40px;
+  left: -34px;
+  background: radial-gradient(circle, rgba(71, 35, 8, 0.62), transparent 68%);
+}
+
+.letter-burn::after {
+  right: -36px;
+  bottom: -46px;
+  background: radial-gradient(circle, rgba(71, 35, 8, 0.56), transparent 70%);
 }
 
 .letter-wrap.locked .letter-card {
   filter: blur(10px);
-  opacity: 0.45;
+  opacity: 0.42;
   transform: scale(0.985);
   user-select: none;
 }
 
+/* título de la carta */
 .letter-kicker {
-  margin: 0 0 18px;
-  color: var(--accent-2);
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.76rem;
-  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 26px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  color: #6c4020;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
 }
 
+/* contenido manuscrito */
 .letter-content {
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: var(--text);
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.45rem, 2.1vw, 1.8rem);
+  line-height: 1.72;
+  color: #35271a;
+  text-shadow: 0 0.3px 0 rgba(255,255,255,0.16);
 }
 
 .letter-content p {
-  margin: 0 0 18px;
+  margin: 0 0 22px;
 }
 
+.letter-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* una línea sutil como papel escrito */
+.letter-content {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(1.72em - 1px),
+    rgba(120, 84, 37, 0.06) calc(1.72em - 1px),
+    rgba(120, 84, 37, 0.06) 1.72em
+  );
+  background-size: 100% 1.72em;
+}
+
+/* BLOQUE DEL POPUP / CANDADO */
 .letter-gate {
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 20px;
-  z-index: 3;
+  padding: 36px 20px 20px;
+  z-index: 4;
   transition: opacity 0.35s ease, visibility 0.35s ease;
 }
 
@@ -2152,9 +2255,9 @@ video {
 }
 
 .letter-gate-box {
-  width: min(100%, 520px);
-  padding: 28px 24px;
-  border-radius: 24px;
+  width: min(100%, 780px);
+  padding: 38px 34px;
+  border-radius: 34px;
   border: 1px solid var(--border-strong);
   background:
     linear-gradient(180deg, rgba(20,24,48,0.96), rgba(12,14,30,0.96));
@@ -2173,29 +2276,48 @@ video {
 }
 
 .letter-gate-box h3 {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  line-height: 1.05;
+  font-size: clamp(2.3rem, 5vw, 4.3rem);
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  max-width: 12ch;
+  margin-inline: auto;
 }
 
 .letter-gate-question {
-  margin: 0 0 18px;
+  margin: 0 0 10px;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.letter-gate-hint {
+  margin: 0 0 22px;
+  text-align: center;
+  color: var(--accent-2);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.30em;
+  opacity: 0.82;
 }
 
 .letter-input {
   width: 100%;
-  min-height: 52px;
-  padding: 0 16px;
-  border-radius: 16px;
-  border: 1px solid var(--border);
+  min-height: 78px;
+  padding: 0 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.06);
   color: var(--text);
   outline: none;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   text-align: center;
+  font-size: 1.02rem;
+}
+
+.letter-input::placeholder {
+  color: rgba(246, 242, 240, 0.54);
 }
 
 .letter-input:focus {
@@ -2210,19 +2332,58 @@ video {
   color: var(--accent-2);
 }
 
+/* firma, si luego quieres usarla */
+.letter-signature {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: #6a3f22;
+}
+
+/* responsive */
 @media (max-width: 640px) {
   .letter-card {
-    padding: 24px 18px;
+    padding: 30px 22px 28px;
     min-height: 420px;
+    border-radius: 16px;
+  }
+
+  .letter-kicker {
+    margin-bottom: 18px;
+    font-size: 2.2rem;
   }
 
   .letter-content {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 1.24rem;
+    line-height: 1.66;
+    background-size: 100% 1.66em;
+  }
+
+  .letter-content p {
+    margin-bottom: 18px;
   }
 
   .letter-gate-box {
-    padding: 22px 16px;
-    border-radius: 20px;
+    padding: 26px 18px;
+    border-radius: 24px;
+  }
+
+  .letter-gate-box h3 {
+    font-size: 2.5rem;
+    max-width: 10ch;
+  }
+
+  .letter-input {
+    min-height: 64px;
+    border-radius: 18px;
+    padding: 0 16px;
+  }
+
+  .letter-burn::before,
+  .letter-burn::after {
+    width: 120px;
+    height: 120px;
+    opacity: 0.14;
   }
 }

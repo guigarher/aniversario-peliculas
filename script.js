@@ -1032,12 +1032,9 @@ function setupLetterGate() {
   if (!wrap || !button || !input || !feedback) return;
 
   const validAnswers = [
-    "slow coffee",
-    "Slow Coffee",
-    "SLOW COFFEE",
-    "slow Coffee",
-    "Slow coffee"
-  ];
+  "slow coffee",
+  "slowcoffee"
+];
 
   function normalizeText(text) {
     return String(text || "")
