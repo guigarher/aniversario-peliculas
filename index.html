@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro año en películas</title>
+  <meta
+    name="description"
+    content="Un resumen de nuestro año en películas, desde el 22 de marzo de 2025 hasta el 22 de marzo de 2026."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="hero" id="top">
+    <div class="hero__film-strip" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow"> Claudia × Guillermo</p>
+
+      <h1 class="hero-title">Nuestro año en películas</h1>
+
+      <p class="hero-text">
+        Un año de sofá, cine y tiempo contigo. De esas películas que vimos juntos y que ahora ya también forman parte de nosotros.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#resumen" class="btn btn-primary">Ver resumen</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-intro" id="resumen">
+      <div class="section-reel" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">22 marzo 2025 → 22 marzo 2026</p>
+          <h2>Un año entero de películas compartidas</h2>
+          <p>
+            Habría jurado que habíamos visto muchas más, pero supongo que eso solo significa que el año se nos ha pasado demasiado rápido. Para el siguiente, habrá que superarse.
+          </p>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+          <article class="stat-card stat-card-main">
+            <span class="stat-label">Películas juntos</span>
+            <strong class="stat-value" id="statTotal">0</strong>
+            <p class="stat-help">Todo lo que forma parte de este primer año en películas.</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-label">Mes más cinéfilo</span>
+            <strong class="stat-value" id="statTopMonth">—</strong>
+            <p class="stat-help" id="statTopMonthDetail">—</p>
+
+            <button
+              class="streak-toggle"
+              id="topMonthToggleBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="topMonthMoviesBox"
+            >
+              Ver películas
+            </button>
+
+            <div class="streak-movies" id="topMonthMoviesBox" hidden>
+              <ul class="streak-movies-list" id="topMonthMoviesList"></ul>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-label">Día favorito</span>
+            <strong class="stat-value" id="statTopWeekday">—</strong>
+            <p class="stat-help" id="statTopWeekdayDetail">—</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-label">Género más visto</span>
+            <strong class="stat-value" id="statTopGenre">—</strong>
+            <p class="stat-help" id="statTopGenreDetail">—</p>
+          </article>
+
+          <article class="stat-card stat-card-streak">
+            <span class="stat-label">Racha más larga</span>
+            <strong class="stat-value" id="statLongestStreak">—</strong>
+            <p class="stat-help" id="statLongestStreakDetail">—</p>
+
+            <button
+              class="streak-toggle"
+              id="streakToggleBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="streakMoviesBox"
+            >
+              Ver películas
+            </button>
+
+            <div class="streak-movies" id="streakMoviesBox" hidden>
+              <ul class="streak-movies-list" id="streakMoviesList"></ul>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-label">Días con pelis</span>
+            <strong class="stat-value" id="statMovieDays">—</strong>
+            <p class="stat-help" id="statMovieDaysDetail">—</p>
+          </article>
+        </div>
+        <div class="section-nav">
+          <a href="#top" class="btn btn-secondary">Anterior</a>
+          <a href="#where" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>  
+    </section>
+
+    <section class="section place-breakdown-section" id="where">
+      <div class="place-remote" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Dónde pasó todo</p>
+          <h2>Los sitios donde vimos películas este año</h2>
+        </div>
+
+        <div class="place-overview-grid">
+          <article class="overview-card">
+            <span class="overview-label">En casa vs fuera</span>
+            <h3 id="homeVsAwayTitle">—</h3>
+            <p id="homeVsAwayText">—</p>
+          </article>
+
+          <article class="overview-card">
+            <span class="overview-label">Lugar más repetido</span>
+            <h3 id="topPlaceTitle">—</h3>
+            <p id="topPlaceText">—</p>
+          </article>
+        </div>
+
+        <div class="places-grid" id="placesGrid">
+          <!-- JS -->
+        </div>
+        <div class="section-nav">
+          <a href="#resumen" class="btn btn-secondary">Anterior</a>
+          <a href="#genres" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section genres-section" id="genres">
+      <div class="place-popcorn" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Géneros</p>
+          <h2>Lo que más vimos</h2>
+          <p>
+              Aquí salen más de los que parecen porque a muchas pelis les puse varios géneros.
+              Así que se repiten, se mezclan y al final también cuentan un poco la clase de historias que más vimos juntos.
+          </p>
+        </div>
+
+        <div class="genres-grid" id="genresGrid">
+          <!-- JS -->
+        </div>
+        <div class="section-nav">
+          <a href="#where" class="btn btn-secondary">Anterior</a>
+          <a href="#first-movie" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotlight-section" id="first-movie">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">La primera de todas</p>
+          <h2>Donde empezó este año</h2>
+        </div>
+
+        <article class="spotlight-card spotlight-primary">
+          <img src="images/roger.png" class="roger" alt="">
+          <div class="spotlight-copy">
+            <p class="spotlight-kicker">Primera película juntos</p>
+            <h3 id="firstMovieTitle">—</h3>
+            <p class="spotlight-meta" id="firstMovieMeta">—</p>
+            <p class="spotlight-notes" id="firstMovieNotes">—</p>
+          </div>
+          <div class="spotlight-side">
+            <div class="mini-pill">22 de marzo de 2025</div>
+          </div>
+        </article>
+        <div class="section-nav">
+          <a href="#genres" class="btn btn-secondary">Anterior</a>
+          <a href="#wrapped" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlights-section" id="wrapped">
+      <div class="highlights-stars"></div>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Resumen del año</p>
+          <h2>Algunas curiosidades</h2>
+          <p>
+            Algunas datos más de todo este año lleno de historias.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+          <article class="highlight-card">
+            <span class="highlight-label">Primera de 2026</span>
+            <h3 id="firstOfYearTitle">—</h3>
+            <p id="firstOfYearMeta">—</p>
+          </article>
+
+          <article class="highlight-card">
+            <span class="highlight-label">Favorita de los dos</span>
+            <h3 id="leastFavoriteTitle">—</h3>
+            <p id="leastFavoriteMeta">—</p>
+          </article>
+
+          <article class="highlight-card highlight-card-expandable">
+            <span class="highlight-label">Día más intenso</span>
+            <h3 id="doubleSessionsValue">—</h3>
+            <p id="doubleSessionsMeta">—</p>
+
+            <button
+              class="highlight-toggle"
+              id="doubleSessionsToggleBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="doubleSessionsBox"
+            >
+              Ver películas
+            </button>
+
+            <div class="highlight-expand" id="doubleSessionsBox" hidden>
+              <ul class="highlight-expand-list" id="doubleSessionsList"></ul>
+            </div>
+          </article>
+
+          <article class="highlight-card">
+            <span class="highlight-label">Mis favoritas</span>
+            <h3 id="yourFavoritesTitle">—</h3>
+            <p id="yourFavoritesMeta">—</p>
+          </article>
+
+          <article class="highlight-card">
+            <span class="highlight-label">Tus favoritas</span>
+            <h3 id="herFavoritesTitle">—</h3>
+            <p id="herFavoritesMeta">—</p>
+          </article>
+
+          <article class="highlight-card">
+            <span class="highlight-label">Mejor documental</span>
+            <h3>La vida entre cortes</h3>
+            <p>
+              El mejor documental del año. Técnicamente el único documental que vimos,
+              pero también el mejor de la historia.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-nav">
+          <a href="#first-movie" class="btn btn-secondary">Anterior</a>
+          <a href="#timeline-section" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline-section">
+      <div class="timeline-clapper timeline-clapper-right" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Cronología completa</p>
+          <h2>La línea del tiempo entera</h2>
+          <p>
+            Desde la primera hasta la última: toda la historia de este año en orden.
+          </p>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline-floating-toggle">
+
+            <button
+              class="btn btn-secondary timeline-toggle-btn"
+              id="toggleTimelineBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="timelineWrapper"
+            >
+              ✦ Ver timeline
+            </button>
+
+            <div class="timeline-clapper timeline-clapper-left" aria-hidden="true"></div>
+          </div>
+
+          <div id="timelineWrapper" hidden>
+            <div id="timeline" class="timeline"></div>
+            <div class="timeline-end-spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="section-nav section-nav-final">
+          <a href="#wrapped" class="btn btn-secondary">Anterior</a>
+          <a href="#trailer" class="btn btn-primary">Siguiente</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trailer-tease-section" id="trailer">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Próximamente</p>
+          <h2>Si todo esto fuera una película</h2>
+          <p>
+            Todo este año solo habría sido un teaser de lo que está por llegar
+          </p>
+        </div>
+
+        <div class="trailer-video-wrap">
+          <div class="video-overlay-wrap">
+            <video id="teaserVideo" controls preload="metadata" poster="images/poster-trailer.png">
+              <source src="media/Nuestro Teaser.mp4" type="video/mp4" />
+              Tu navegador no puede reproducir este vídeo.
+            </video>
+
+            <button class="play-overlay-btn" id="playOverlayBtn" aria-label="Reproducir vídeo">
+              ▶
+            </button>
+          </div>
+        </div>
+
+        <div class="section-nav section-nav-final">
+          <a href="#timeline-section" class="btn btn-secondary">Anterior</a>
+          <a href="#top" class="btn btn-primary">Volver a Inicio</a>
+        </div>
+      </div>
+    </section>
+    <section class="section letter-section" id="carta">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Una última cosa</p>
+          <h2>Antes de leer esto…</h2>
+          <p>
+            Hay una pequeña pregunta antes de llegar a la carta.
+          </p>
+        </div>
+
+        <div class="letter-wrap locked" id="letterWrap">
+          <article class="letter-card">
+            <p class="letter-kicker">Para Claudia</p>
+
+            <div class="letter-content">
+              <p>Aquí escribes tu carta de verdad.</p>
+              <p>
+                Puedes ponerla en varios párrafos, en plan íntimo, bonito, sincero
+                y todo lo que tú quieras decirle.
+              </p>
+              <p>
+                Esto ya sería tu texto real, escrito por ti.
+              </p>
+            </div>
+          </article>
+
+          <div class="letter-gate" id="letterGate">
+            <div class="letter-gate-box">
+              <p class="letter-gate-eyebrow">Acceso restringido</p>
+              <h3>Solo puedes abrir esta carta si respondes bien</h3>
+              <p class="letter-gate-question">
+                ¿Cuál fue nuestra primera película juntos?
+              </p>
+
+              <input
+                type="text"
+                id="letterAnswer"
+                class="letter-input"
+                placeholder="Escribe tu respuesta"
+                autocomplete="off"
+              />
+
+              <button type="button" class="btn btn-primary" id="letterUnlockBtn">
+                Desbloquear carta
+              </button>
+
+              <p class="letter-feedback" id="letterFeedback"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-nav section-nav-final">
+          <a href="#trailer" class="btn btn-secondary">Anterior</a>
+          <a href="#top" class="btn btn-primary">Volver a Inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
