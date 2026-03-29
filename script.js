@@ -1032,12 +1032,11 @@ function setupLetterGate() {
   if (!wrap || !button || !input || !feedback) return;
 
   const validAnswers = [
-    "who framed roger rabbit",
-    "who framed roger rabbit?",
-    "roger rabbit",
-    "¿quién engañó a roger rabbit?",
-    "quien engaño a roger rabbit",
-    "quién engañó a roger rabbit"
+    "slow coffee",
+    "Slow Coffee",
+    "SLOW COFFEE",
+    "slow Coffee",
+    "Slow coffee"
   ];
 
   function normalizeText(text) {
